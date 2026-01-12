@@ -87,10 +87,7 @@ public enum ErrorCode {
 	/** 리소스 소유자가 아님 (본인 글만 수정/삭제 가능) */
 	NOT_RESOURCE_OWNER(HttpStatus.FORBIDDEN, "본인의 리소스만 수정/삭제할 수 있습니다."),
 
-	/** 밴드 멤버가 아님 */
-	NOT_BAND_MEMBER(HttpStatus.FORBIDDEN, "밴드 멤버만 접근할 수 있습니다."),
-
-	/** 밴드 리더가 아님 (리더 권한 필요) */
+	/** 밴드 리더가 아님 (리더 권한 필요함) */
 	NOT_BAND_LEADER(HttpStatus.FORBIDDEN, "밴드 리더만 수행할 수 있는 작업입니다."),
 
 	/** 정지된 계정 (신고 등으로 인한 제재) */
